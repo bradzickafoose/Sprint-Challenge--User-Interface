@@ -238,7 +238,8 @@ h3 {
 .notification button {
     background-color: #fff;
     color: #880c23;
-    font-size: 14px;;
+    font-size: 14px;
+    ;
     margin-left: 10px;
     padding: 8px 20px;
     border: none;
@@ -397,6 +398,7 @@ header nav a:hover {
 .contact-page .intro h1 {
     padding-top: 20px;
 }
+
 .contact-page form {
     width: 80%;
     background-color: #fff;
@@ -410,9 +412,11 @@ header nav a:hover {
 .contact-page form .form-group {
     margin-bottom: 1rem;
 }
+
 .contact-page form label {
     font-weight: bold;
 }
+
 .contact-page form .form-control {
     width: 100%;
     font-size: 1rem;
@@ -420,6 +424,7 @@ header nav a:hover {
     border-radius: 4px;
     padding: 8px
 }
+
 .contact-page form button {
     margin-top: 10px;
     padding: 10px 25px;
@@ -428,6 +433,12 @@ header nav a:hover {
     border-radius: 10px;
     font-size: 1rem;
 }
+
+.contact-page form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 /* footer */
 footer {
     width: 100%;
