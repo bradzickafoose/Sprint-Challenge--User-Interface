@@ -225,6 +225,8 @@ h3 {
     background-color: #880c23;
     color: #fff;
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 .notification .container {
@@ -236,9 +238,11 @@ h3 {
 .notification button {
     background-color: #fff;
     color: #880c23;
+    font-size: 14px;;
     margin-left: 10px;
-    padding: 10px 15px;
+    padding: 8px 20px;
     border: none;
+    border-radius: 10px;
 }
 
 .notification button:hover {
@@ -271,6 +275,7 @@ header nav a {
     text-decoration: none;
     padding: 20px 25px;
     transition: all 0.5s ease-in 0s;
+    border-radius: 10px;
 }
 
 header nav a:hover {
@@ -343,12 +348,49 @@ header nav a:hover {
 .about-page .intro {
     padding-top: 20px;
 }
+
 .about-page .intro .text-container {
     padding: 0 1%;
     padding-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+.about-page .about-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.about-page .about-item {
+    width: 48%;
+    padding: 20px 0 30px 0;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .about-item h2 {
+    margin-top: 10px;
+}
+
+.about-page .about-item button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.about-page .about-item button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.about-page .cta {
+    margin-top: 20px;
+    padding: 0 1%;
+    padding-bottom: 30px;
+}
 
 /* footer */
 footer {
