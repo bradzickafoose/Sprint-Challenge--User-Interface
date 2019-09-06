@@ -202,13 +202,13 @@ p {
 
 .indigo {
     background-color: indigo !important;
-} 
+}
 
 .dodgerblue {
     background-color: dodgerblue !important;
 }
 
-/* top of page notification */ 
+/* top of page notification */
 .notification {
     background-color: #880c23;
     color: #fff;
@@ -347,4 +347,8 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
 }
