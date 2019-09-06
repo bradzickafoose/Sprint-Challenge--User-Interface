@@ -87,6 +87,10 @@ header nav {
     width: 80%;
 }
 
+.hero img {
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
