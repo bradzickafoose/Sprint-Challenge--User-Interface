@@ -392,6 +392,42 @@ header nav a:hover {
     padding-bottom: 30px;
 }
 
+/* contact page */
+
+.contact-page .intro h1 {
+    padding-top: 20px;
+}
+.contact-page form {
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-page form .form-group {
+    margin-bottom: 1rem;
+}
+.contact-page form label {
+    font-weight: bold;
+}
+.contact-page form .form-control {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px
+}
+.contact-page form button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
 /* footer */
 footer {
     width: 100%;
