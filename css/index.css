@@ -3,60 +3,152 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -71,18 +163,145 @@ p {
     margin: 0 auto;
 }
 
+/* helper classes */
+.bold-text {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.teal {
+    background-color: teal !important;
+}
+
+.gold {
+    background-color: gold !important;
+}
+
+.cadetblue {
+    background-color: cadetblue !important;
+}
+
+.coral {
+    background-color: coral !important;
+}
+
+.crimson {
+    background-color: crimson !important;
+}
+
+.forestgreen {
+    background-color: forestgreen !important;
+}
+
+.darkorchid {
+    background-color: darkorchid !important;
+}
+
+.hotpink {
+    background-color: hotpink !important;
+}
+
+.indigo {
+    background-color: indigo !important;
+}
+
+.dodgerblue {
+    background-color: dodgerblue !important;
+}
+
+/* top of page notification */
+.notification {
+    background-color: #880c23;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.notification .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification button {
+    background-color: #fff;
+    color: #880c23;
+    font-size: 14px;
+    ;
+    margin-left: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.notification button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+header img {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 50px;
+    width: 80%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 25px;
+    transition: all 0.5s ease-in 0s;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* hero image */
+.hero img {
+    width: 100%;
+}
+
+/* homepage */
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -126,6 +345,101 @@ p {
     padding-right: 0;
 }
 
+/* about page */
+.about-page .intro {
+    padding-top: 20px;
+}
+
+.about-page .intro .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .about-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.about-page .about-item {
+    width: 48%;
+    padding: 20px 0 30px 0;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .about-item h2 {
+    margin-top: 10px;
+}
+
+.about-page .about-item button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.about-page .about-item button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.about-page .cta {
+    margin-top: 20px;
+    padding: 0 1%;
+    padding-bottom: 30px;
+}
+
+/* contact page */
+
+.contact-page .intro h1 {
+    padding-top: 20px;
+}
+
+.contact-page form {
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-page form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-page form label {
+    font-weight: bold;
+}
+
+.contact-page form .form-control {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px
+}
+
+.contact-page form button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact-page form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* footer */
 footer {
     width: 100%;
     background: black;
@@ -143,4 +457,8 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
 }
