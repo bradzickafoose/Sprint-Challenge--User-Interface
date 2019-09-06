@@ -75,6 +75,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 25px 0;
 }
 
 header img {
@@ -83,8 +84,22 @@ header img {
 
 header nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 0 0 50px;
     width: 80%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 25px;
+    transition: all 0.5s ease-in 0s;
+}
+
+header nav a:hover {
+    background-color: black;
+    color: white;
 }
 
 .hero img {
